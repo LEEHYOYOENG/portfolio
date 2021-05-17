@@ -1,0 +1,173 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* 여백 초기화  */
+* { margin:0; padding:0; }
+
+/* 목록 불릿 없애기 */
+ol, ul { list-style:none; }
+
+/* 하이퍼링크 설정 */
+a:link { text-decoration:none; color:#000; }
+a:hover { text-decoration:none; color:#000; }
+a:visited { text-decoration:none; color:#000; }
+a:active { text-decoration:none; color:#000; }
+a:focus { text-decoration:none; color:#000; }
+
+
+legend, caption { display:none; }
+fieldset { border:0; }
+input, select, textarea { vertical-align:middle; }
+
+.clearfix:after { content: ""; display: block; clear: both; }
+
+body { font-family:"Haan Baekje B" ; font-size:16px; line-height:26px; color:#000; }
+#wrap { min-width:1200px; }
+
+
+#header .header_inner { width: 1200px; height: 180px; margin: 0 auto; position: relative; z-index: 99; }
+#header h1 { position: absolute; left: 0; top: 30px;}
+#header .search form { margin-top: 20px; display: inline-block; border: 2px solid #eee; position: absolute; left: 380px; top: 20px; }
+#header .search input { background: #fff; height: 45px; color: #fff; padding: 10px; box-sizing: border-box; }
+#header .search input[type="text"] { width: 350px; }
+#header .search input[type="submit"] { font-size: 0; background: #fff url('../images/common/icon_search-1.jpg') no-repeat center center; width: 50px; cursor: pointer; }
+
+#header .util { position: absolute; right: 0; top: 30px; }
+#header .util li { float: left; padding-right: 20px; font-size: 0; }
+#header .util li a { color: #999;  }
+
+
+#header .gnb { position:absolute; width: 1200px; top:100px; left: 0; z-index: 999; }
+#header .gnb > li {float: left; width: calc(100%/4); position:relative; padding:40px 0 15px; text-align: center; }
+#header .gnb > li > a { display: inline-block; text-align: center;font-size: 24px; text-transform: capitalize; }
+#header .gnb > li:hover > a { color: #1755ff; }
+
+#header .gnb > li:hover .dp2 { background:rgba(207, 227, 255, 0.8); }
+#header .gnb .dp2 { transition:background 1s; width: 150px; height: 150px; padding: 10px 0; box-sizing: border-box; position: absolute;left: 63px; top: 80px;}
+#header .gnb .dp2 li a { display:inline-block; color: #fff; font-size: 22px; font-weight: normal; text-align: center; }
+#header .gnb .dp2 li a:hover {color: #1755ff;}
+
+#header { border-bottom: 1px solid #eee;}
+
+
+/*products*/
+#products{width: 1200px; margin: 150px auto; position: relative;}
+#products span{position: absolute; left: 430px; top:-100px; text-align: center; font-size: 40px; text-transform: uppercase; color:#7c7c7c; font-weight: bold;  }
+#products .prod_image{float: left; width:600px;}
+#products .prod_buy{ float: right; width: 550px; padding: 0 25px; height: 50px; z-index: 999;}
+#products .prod_buy p{display: block; font-size: 20px; margin: 18px 0 ;font-family: 'Nanum Gothic';font-weight: 700; background: url('../images/common/btn_contents-7.jpg')no-repeat 500px -10px;}
+
+#products .prod_buy dl{display: block; font-family: 'Nanum Gothic'; }
+#products .name { background-color: #CAE1FE; border-radius: 5px; position: relative; padding: 26px 220px;margin-bottom: 10px; font-weight: bold;}
+#products .name dt{ font-size: 20px; position: absolute; left: 10px; top: 12px;}
+#products .name dd{ font-size: 18px; position: absolute; right: 15px; top: 13px; color: #e32323;}
+#products .price{display: block; padding: 15px; position: relative;margin: 15px 0;}
+#products .price dt{  position: absolute; left: 5px; top: 12px;}
+#products .price dd{  position: absolute; right: 5px; top: 12px; }
+#products .been{display: block; padding: 15px; position: relative;margin: 15px 0;}
+#products .been dt{  position: absolute; left: 5px; top: 12px;}
+#products .been dd{  position: absolute; right: 5px; top: 12px;}
+#products .wei{display: block; padding: 15px; position: relative;margin: 28px 0;}
+#products .wei dt{  position: absolute; left: 5px; top: 12px;}
+#products .wei dd{  position: absolute; left: 45px; top: 12px;}
+#products .unit { background-color: #486F9F; border-radius: 5px; position: relative; padding: 15px 220px; margin :18px 0}
+#products .unit dt{ display: inline-block; font-size: 20px;}
+#products .count li{float: left;}
+#products .count  li:nth-child(1){ position: absolute; left: 50px; top: 10px; }
+#products .count  li:nth-child(2){ position: absolute; left: 90px; top: 13px;}
+#products .count  li:nth-child(3){ position: absolute; left: 120px; top: 13px;}
+
+#products .unit dd{ font-size: 18px; position: absolute; right: 15px; top: 13px; }
+
+#desc { width: 1200px; position: relative; }
+#desc .prod_desc{position: absolute; left: 20px; top: 380px; font-family: 'Nanum Gothic';}
+
+#products .prod_btn{ float: right;position: absolute; left: 625px; top: 380px;font-family: 'Nanum Gothic'; font-size: 16px; font-weight: normal;}
+#products .prod_btn li{float: left; box-sizing: border-box; margin-left: 12px;   border-radius: 3px;  text-align: center;}
+#products .prod_btn li:nth-child(1){background: #1E408D; color: #fff;padding: 5px 52px;}
+#products .prod_btn li:nth-child(2){background: #5289CC;color: #fff; padding: 5px 52px; }
+#products .prod_btn li:nth-child(3){background: #CAE1FE; padding: 5px 46px; }
+
+
+/* contents */
+.tab_titles1 {width: 1200px; margin: 0 auto; border-bottom:2px solid #ccc; }  
+.tab_titles1 li { float: left;}
+.tab_titles1 li { padding:10px 40px 15px ; font-size: 20px;}
+.tab_titles1 li:nth-child(1){border-bottom: 3px solid #0F377B;}
+ 
+#detail {width: 1200px; margin:50px auto;}
+#detail .photo  {float: left; width: 400px; padding-left: 60px;}   
+#detail .detail_inner{float: right; width: 700px; }
+#detail .detail_inner h2{ color: #153989; margin-bottom: 80px; font-size: 30px;}
+#detail .detail_inner p{font-size: 24px;}
+#detail .detail_inner span{color: #707070;font-family: 'Nanum Gothic';font-size: 22px; margin-bottom: 10px;}
+
+
+ #main_desc{width: 1200px; height: 450px; background: #E8F1FF; margin: 100px auto;position: relative; margin-bottom: 50px;}  
+
+ #main_desc h2{ position: absolute; left: 100px; top:40px; color:#1E408D;font-family: 'Nanum Gothic'; font-size: 22px; font-weight: bold; }
+ #main_desc .img_list li{float: left; margin: 40px; }
+ #main_desc .img_list{position: absolute; left: 60px; top: 65px;}
+ #main_desc p{ position: absolute; left: 100px; top: 270px; color: #707070;font-family: 'Nanum Gothic'; font-size: 20px; font-weight: normal;}
+
+
+ #item {width: 1200px; margin: 60px auto; text-align: center; }
+ #item .btn1 {text-align: center;  
+    background: url(../images/common/btn_contents2_diagra.png) no-repeat 230px center; border: 1px solid #346aff;font-family: 'Nanum Gothic';border-radius: 2px;display: inline-block;padding: 14px 80px;color: #346aff; }
+
+
+.tab_titles2 {width: 1200px; margin: 100px auto; border-bottom:2px solid #ccc; }
+.tab_titles2 li { float: left;}
+.tab_titles2 li { padding:10px 40px 15px ; font-size: 20px;}
+.tab_titles2 li:nth-child(2){border-bottom: 3px solid #0F377B;}
+
+
+ .notice { width:1200px;  margin:0px auto; position: relative;font-family: 'Nanum Gothic';}
+ .notice h4{display: inline-block; background: #1E408D; color: #fff;padding: 6px 33px; font-family: 'Nanum Gothic'; font-size: 14px;position: absolute; right: 10px; top: -80px; }
+
+ .notice table {  border-collapse:collapse; width: 1200px; }
+ .notice table th { padding:12px 0;  border-bottom:1px solid #ccc; }
+ .notice table td { padding:12px; border-bottom:1px solid #f0f0f0; text-align:center; }
+ .notice table tr td:nth-child(2) { text-align:left; }
+ .notice a { transition: color 0.3s; }
+ .notice a:hover { color: #0092ff; }
+
+ .pagebox { width: 1200px; padding-bottom: 40px; position: relative;margin-bottom: 100px;}
+ .page li a {float: left ;} 
+ .page li { display:inline-block;  margin:1px; padding:5px 20px; font-family: 'Nanum Gothic'; font-size: 14px; }
+
+ .page li:nth-child(1){background:  url('../images/css/Path85.png')no-repeat 0px 10px; position: absolute; left:  100px; top: 10px;}
+.page li:nth-child(2){position: absolute; top: 10px; left: 270px;}
+.page li:nth-child(3){position: absolute; top: 10px; left: 300px;}
+.page li:nth-child(4){position: absolute; top: 10px; left: 330px;}
+.page li:nth-child(5){background:  url('../images/css/Path86.png')no-repeat 60px 10px; position: absolute; left:  440px; top: 10px; margin-right: 10px;z-index: 999;}
+.pagebox h5{display: inline-block; background: #7AA4D7; color: #000;padding: 2px 16px; font-family: 'Nanum Gothic'; font-size: 12px;position: absolute; left: 540px; top: 15px; border-radius: 5px;}
+
+
+.search_buy { display: inline-block; border: 1px solid #eee; position: absolute; right: 100px; top: 10px; }
+.search_buy input { background: #fff; height: 30px; color: #fff; padding: 10px; box-sizing: border-box; }
+.search_buy input[type="text"] { width: 300px; }
+.search_buy input[type="submit"] { font-size: 0; background: #fff url('../images/common/icon_search-1.jpg') no-repeat 0 0; width: 30px; cursor: pointer; }
+
+ /*banner영역*/
+#banners{width:100%; border-top: 1px solid #ddd;}
+#banners .banner_inner {width: 1920px;  margin:0px auto; }
+#banners .util_list li { width: calc(100%/6); float: left; font-size: 0;  text-align: center;  }   
+
+#banners .bx-wrapper .bx-controls-direction a {
+    display: none;
+}
+
+ 
+/*footer영역*/
+#footer { background:#0F377B; height: 200px;  }
+#footer .footer_inner { width:1200px; margin:0px auto; padding:50px 0; font-size:14px; position: relative; }
+#footer .footer_logo{ position: absolute; left: 15px; top: 50px;}
+#footer .foot_link  { display:inline-block; padding:0 10px; position: absolute; right: 20px; top: 50px; }
+#footer .foot_link a{color: #fff;}
+#footer .foot_link a:hover{color: #000;} 
+
+#footer .address  { color:#fff; position: absolute; left: 200px; top: 50px; }
+
+

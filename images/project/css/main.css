@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+/*초기화*/
+
+* { margin: 0; padding: 0; }
+ol,ul { list-style: none; }
+table { border-collapse: collapse; }
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+    color: #000;
+}
+fieldset { border: 0; }
+legend { display: none; }
+input { vertical-align: middle; border: 0; }
+
+.clearfix:after { content: ""; display: block; clear: both; }
+
+
+
+
+body { font-family:"Haan Baekje B"; font-size: 16px; line-height: 26px; color: #000; }
+#wrap { overflow: hidden; min-width: 1200px; }
+
+#header { width: 1200px; height: 180px; margin: 0 auto; position: relative; z-index: 99; }
+#header h1 { position: absolute; left: 0; top: 30px;}
+#header .search form { margin-top: 20px; display: inline-block; border: 2px solid #222; position: absolute; left: 380px; top: 20px; }
+#header .search input { background: #fff; height: 45px; color: #fff; padding: 10px; box-sizing: border-box; }
+#header .search input[type="text"] { width: 350px; }
+#header .search input[type="submit"] { font-size: 0; background: #fff url('../images/common/icon_search-1.jpg') no-repeat center center; width: 50px; cursor: pointer; }
+
+#header .util { position: absolute; right: 0; top: 30px; }
+#header .util li { float: left; padding-right: 20px; font-size: 0; }
+#header .util li a { color: #999;  }
+
+
+#header .gnb { position:absolute; width: 1200px; top:100px; left: 0; z-index: 999; }
+#header .gnb > li {float: left; width: calc(100%/4); position:relative; padding:40px 0 15px; text-align: center; }
+#header .gnb > li > a { display: inline-block; text-align: center;font-size: 24px; text-transform: capitalize; }
+#header .gnb > li:hover > a { color: #1755ff; }
+
+#header .gnb > li:hover .dp2 { background:rgba(207, 227, 255, 0.8); }
+#header .gnb .dp2 { transition:background 1s; width: 150px; height: 150px; padding: 10px 0; box-sizing: border-box; position: absolute;left: 63px; top: 80px;}
+#header .gnb .dp2 li a { display:inline-block; color: #fff; font-size: 22px; font-weight: normal; text-align: center; }
+#header .gnb .dp2 li a:hover {color: #1755ff;}
+
+
+/* main-visual */
+#main_visual { height:600px; text-align: center;position: relative; }
+
+#main_visual .bx-pager { position:absolute; bottom: 20px; left:50%; transform: translateX(-50%); }
+#main_visual .bx-pager-item { float:left; }
+#main_visual .bx-pager a { background:#153989; font-size: 0; display:block; width:10px; height:10px; margin:0 5px; border-radius:5px; transition:all 0.3s; }
+#main_visual .bx-pager a.active { background:#fff; width:30px; }
+
+#main_visual .bx-controls-direction a { position: absolute; top: 45%; width: 30px; height: 30px; font-size: 0; border-top: 6px solid #fff; border-left:6px solid #fff; }
+#main_visual .bx-prev { left: 5%; transform: rotate(-45deg) translateY(-15px); }
+#main_visual .bx-next { right: 5%; transform: rotate(135deg) translateY(15px); }
+
+/*contents*/
+
+#information{width: 1200px; height: 600px; background: url(../images/main/img_inpomation.jpg) no-repeat center center; margin: 200px auto;position: relative;}
+#information span{position: absolute;left: 430px; top:-100px; text-align: center; font-size: 50px; text-transform: uppercase; color:#7c7c7c; font-weight: bold;}
+#information .information_inner{width: 1200px; height: 275px; background: rgba(21,68,130,0.2);position: absolute;left: 0; top: 150px;}
+#information .information_inner a:hover h2 {color: #153989;}
+#information h2 { font-size: 50px; text-align: center; color:#fff;padding-top: 80px; }
+#information p{ font-size: 34px; text-align: center; color: #fff;padding-top: 40px;}   
+
+    
+#technology {height: 600px; background: #E8F1FF;  margin-bottom: 200px;position: relative;}
+#technology span{position: absolute; left: 430px; top:-100px; text-align: center; font-size: 50px; text-transform: uppercase; color:#7c7c7c; font-weight: bold;}
+#technology .technology_inner{ width: 1200px; position: relative; margin: 0 auto; }
+#technology span{position: absolute; left: 430px; top:-110px; text-align: center; font-size: 50px; text-transform: uppercase; color:#7c7c7c; font-weight: bold;}
+
+#technology .avi {float: left; position: absolute; left: 0; top: 50px;background: url(../images/main/img_main_movie.jpg) no-repeat center center; width: 579px; height: 474px; text-align: center; padding-top: 150px; box-sizing: border-box; }
+#technology .desc{float: right;}  
+#technology .desc{font-size: 24px; text-align: left;}
+#technology h2{ font-size: 36px; position: absolute; left: 650px; top: 100px;font-family: 'Nanum Gothic'; margin-bottom: 10px; }   
+#technology p{font-size: 22px;position: absolute; left: 650px; top: 150px; font-family: 'Nanum Gothic';  }  
+#technology h3{color: #000; font-family: 'Nanum Gothic'; font-weight: normal; font-size: 24px; position: absolute; left: 650px; top: 480px;background: url(../images/main/btn_technology.png) no-repeat 110px 5px; z-index: 999; width: 300px;}
+#technology h3:hover {color: #153989; font-family: 'Nanum Gothic'; font-weight: normal; font-size: 24px; position: absolute; left: 650px; top: 480px;background: url(../images/main/btn_technology.png) no-repeat 80px 5px; z-index: 999; width: 300px;}
+
+#guide {width: 1200px; margin: 100px auto; position: relative;}    
+#guide .event{float: left; margin-bottom: 50px;}
+#guide .event span{position: absolute; left: 0px; top:-80px;  font-size: 50px; text-transform: uppercase; color:#7c7c7c; font-weight: bold;}
+#guide .news{float: right; position: relative;margin-bottom: 50px;} 
+#guide .news span{position: absolute; left: 0px; top:-80px;  font-size: 50px; text-transform: uppercase; color:#7c7c7c; font-weight: bold;}
+#guide .news .news_list li { width: 530px; height: 40px; background: #E2EDFF; margin-bottom: 8px;  padding-top:21px;}
+#guide .news .news_list li a{font-size: 22px;}
+#guide .festival{margin: 20px 0;}   
+    
+ /*banner영역*/
+#banners{width:100%; border-top: 1px solid #ddd;}
+#banners .banner_inner {width: 1920px;  margin:0 auto; }
+#banners .util_list li { width: calc(100%/6); float: left; font-size: 0;  text-align: center;  }   
+
+#banners .bx-wrapper .bx-controls-direction a {
+    display: none;
+}
+
+ 
+/*footer영역*/
+#footer { background:#0F377B; height: 200px;  }
+#footer .footer_inner { width:1200px; margin:0px auto; padding:50px 0; font-size:14px; position: relative; }
+#footer .footer_logo{ position: absolute; left: 15px; top: 50px;}
+#footer .foot_link  { display:inline-block; padding:0 10px; position: absolute; right: 20px; top: 50px; }
+#footer .foot_link a{color: #fff;}
+#footer .foot_link a:hover{color: #000;} 
+
+#footer .address  { color:#fff; position: absolute; left: 200px; top: 50px; }
+
+    
+    
+    
+    
+    
+    
+    
+    
